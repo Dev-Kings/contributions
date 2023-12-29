@@ -1,177 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expense Tracker</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
-    />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <style>
-      div.dataTables_wrapper {
-        margin-bottom: 3em;
-      }
-      th {
-        white-space: nowrap;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
 
-  <body>
-    <h2>Contributions to Common Pool</h2>
-    <table id="first" class="display" style="width: 100%">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Date</th>
-          <th>Reference</th>
-          <th>Amount</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td>2022-07-02</td>
-          <td>QG26RLVUQG</td>
-          <td>500</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2022-07-29</td>
-          <td>QGT9A7NO5Z</td>
-          <td>500</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2022-09-02</td>
-          <td>QI269LN9ZE</td>
-          <td>500</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2022-10-02</td>
-          <td>QJ233E47GJ(C2B)</td>
-          <td>1000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2022-10-29</td>
-          <td>QJT6TGUXNA(C2B)</td>
-          <td>1000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2022-12-02</td>
-          <td>QL295OT8RV(C2B)</td>
-          <td>1,500</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2022-12-30</td>
-          <td>QLU7C5BJVJ(C2B)</td>
-          <td>3,500</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-02-02</td>
-          <td>RB28PI5XXE(C2B)</td>
-          <td>1,500</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-03-03</td>
-          <td>RC35VWZUJX(C2B)</td>
-          <td>1,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-04-03</td>
-          <td>RD33BKAUPH(C2B)</td>
-          <td>1,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-05-31</td>
-          <td>REV6WD4HPO(C2B)</td>
-          <td>2,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-07-01</td>
-          <td>RG15F3QQEV(C2B)</td>
-          <td>1,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-08-01</td>
-          <td>RH15Z8ET13(C2B)</td>
-          <td>1,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-09-02</td>
-          <td>RI20PDHIK2(C2B)</td>
-          <td>1,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-11-01</td>
-          <td>RK174OPYP5(C2B)</td>
-          <td>1,000</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="3" style="text-align: right">Total:</th>
-          <th></th>
-        </tr>
-      </tfoot>
-    </table>
-    <br />
-    <h3>Loans Sent from Stanchart/Family bank to Kings' MPESA</h3>
-    <table id="second" class="display" style="width: 100%">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Date</th>
-          <th>Reference</th>
-          <th>Amount</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td>2022-11-22</td>
-          <td>QKK3AY8AA1</td>
-          <td>5,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-05-21</td>
-          <td>REL13WZBCN</td>
-          <td>1,000</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>2023-11-13</td>
-          <td>RKD9A2QT93</td>
-          <td>3,000</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="3" style="text-align: right">Total:</th>
-          <th></th>
-        </tr>
-      </tfoot>
-    </table>
-    <br>
-    <h4>Loans sent from Bikra's MPESA to Kings' MPESA</h2>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <style>
+    div.dataTables_wrapper {
+      margin-bottom: 3em;
+    }
+
+    th {
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Contributions to Common Pool</h2>
+  <table id="first" class="display" style="width: 70%">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Date</th>
+        <th>Reference</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>2022-07-02</td>
+        <td>QG26RLVUQG</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2022-07-29</td>
+        <td>QGT9A7NO5Z</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2022-09-02</td>
+        <td>QI269LN9ZE</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2022-10-02</td>
+        <td>QJ233E47GJ(C2B)</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2022-10-29</td>
+        <td>QJT6TGUXNA(C2B)</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2022-12-02</td>
+        <td>QL295OT8RV(C2B)</td>
+        <td>1,500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2022-12-30</td>
+        <td>QLU7C5BJVJ(C2B)</td>
+        <td>3,500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-02-02</td>
+        <td>RB28PI5XXE(C2B)</td>
+        <td>1,500</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-03-03</td>
+        <td>RC35VWZUJX(C2B)</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-04-03</td>
+        <td>RD33BKAUPH(C2B)</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-05-31</td>
+        <td>REV6WD4HPO(C2B)</td>
+        <td>2,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-07-01</td>
+        <td>RG15F3QQEV(C2B)</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-08-01</td>
+        <td>RH15Z8ET13(C2B)</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-09-02</td>
+        <td>RI20PDHIK2(C2B)</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-11-01</td>
+        <td>RK174OPYP5(C2B)</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-12-01</td>
+        <td>RL10VYED1C(C2B)</td>
+        <td>1,500</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3" style="text-align: right">Total:</th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+  <hr>
+  <h3>Loans Sent from Stanchart/Family bank to Kings' MPESA</h3>
+  <table id="second" class="display" style="width: 100%">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Date</th>
+        <th>Reference</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>2022-11-22</td>
+        <td>QKK3AY8AA1</td>
+        <td>5,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-05-21</td>
+        <td>REL13WZBCN</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>2023-11-13</td>
+        <td>RKD9A2QT93</td>
+        <td>3,000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3" style="text-align: right">Total:</th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+  <hr>
+  <h4>Loans sent from Bikra's MPESA to Kings' MPESA</h2>
     <table id="third" class="display" style="width: 100%">
       <thead>
         <tr>
@@ -202,174 +207,450 @@
         </tr>
       </tfoot>
     </table>
-  </body>
-  <script>
-    $(document).ready(function () {
-      var table1 = $("#first").DataTable({
-        columnDefs: [
-          {
-            searchable: false,
-            orderable: false,
-            targets: 0,
-          },
-        ],
-        "lengthMenu" : [ [20, 50, -1], [20, 50, "All"] ],
-        order: [[1, "asc"]],
-        footerCallback: function (row, data, start, end, display) {
-          var api = this.api();
+    <hr>
+    <h4>Miscellenious Loan offset - T</h2>
+      <table id="fourth" class="display" style="width: 50%">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Pay Date</th>
+            <th>Reference</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>2022-05-01</td>
+            <td>QE179ITJW5</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-05-27</td>
+            <td>QER8PF5K8K</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-07-01</td>
+            <td>QG1602QQHG</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-07-29</td>
+            <td>QGT6A78XFS</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-09-02</td>
+            <td>QI209LLI10</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-10-02</td>
+            <td>QJ263DEW4K</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-10-02</td>
+            <td>QJ273DK56P</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-10-29</td>
+            <td>QJT2TH9JR6</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-10-29</td>
+            <td>QJT0THDRW2</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2022-12-02</td>
+            <td>QL285OVLKM</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-02-28</td>
+            <td>RBS9OTM3XX</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-04-03</td>
+            <td>RD36A1I84K</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-06-02</td>
+            <td>RF2424V4J4</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-07-01</td>
+            <td>RG12F3VXL4</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-08-01</td>
+            <td>RH12Z8I2G8</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-11-01</td>
+            <td>RK184OK11S</td>
+            <td>500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3" style="text-align: right">Total:</th>
+            <th></th>
+          </tr>
+        </tfoot>
+      </table>
+      <hr>
+    <h4>Miscellenious Loan offset - C</h2>
+      <table id="fifth" class="display" style="width: 50%">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Pay Date</th>
+            <th>Reference</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>2023-07-01</td>
+            <td>RG11F3TRHP</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-08-01</td>
+            <td>RH14Z8M0I6</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-10-01</td>
+            <td>RJ17A7H62Z</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-11-01</td>
+            <td>RK184OM19S</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>2023-12-01</td>
+            <td>RL16VYHYE6</td>
+            <td>500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3" style="text-align: right">Total:</th>
+            <th></th>
+          </tr>
+        </tfoot>
+      </table>
+</body>
+<script>
+  $(document).ready(function () {
+    var table1 = $("#first").DataTable({
+      columnDefs: [
+        {
+          searchable: false,
+          orderable: false,
+          targets: 0,
+        },
+      ],
+      "lengthMenu": [[20, 50, -1], [20, 50, "All"]],
+      order: [[1, "asc"]],
+      footerCallback: function (row, data, start, end, display) {
+        var api = this.api();
 
-          // Remove the formatting to get integer data for summation
-          var intVal = function (i) {
-            return typeof i === "string"
-              ? i.replace(/[\$,]/g, "") * 1
-              : typeof i === "number"
+        // Remove the formatting to get integer data for summation
+        var intVal = function (i) {
+          return typeof i === "string"
+            ? i.replace(/[\$,]/g, "") * 1
+            : typeof i === "number"
               ? i
               : 0;
-          };
+        };
 
-          // Total over all pages
-          total = api
-            .column(3)
-            .data()
-            .reduce(function (a, b) {
-              return intVal(a) + intVal(b);
-            }, 0);
+        // Total over all pages
+        total = api
+          .column(3)
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
 
-          // Total over this page
-          pageTotal = api
-            .column(3, { page: "current" })
-            .data()
-            .reduce(function (a, b) {
-              return intVal(a) + intVal(b);
-            }, 0);
+        // Total over this page
+        pageTotal = api
+          .column(3, { page: "current" })
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
 
-          // Update footer
-          $(api.column(3).footer()).html("Ksh." + pageTotal);
-        },
-      });
-
-      table1
-        .on("order.dt search.dt", function () {
-          let i = 1;
-
-          table1
-            .cells(null, 0, { search: "applied", order: "applied" })
-            .every(function (cell) {
-              this.data(i++);
-            });
-        })
-        .draw();
-
-      var table2 = $("#second").DataTable({
-        columnDefs: [
-          {
-            searchable: false,
-            orderable: false,
-            targets: 0,
-          },
-        ],
-        order: [[1, "asc"]],
-        footerCallback: function (row, data, start, end, display) {
-          var api = this.api();
-
-          // Remove the formatting to get integer data for summation
-          var intVal = function (i) {
-            return typeof i === "string"
-              ? i.replace(/[\$,]/g, "") * 1
-              : typeof i === "number"
-              ? i
-              : 0;
-          };
-
-          // Total over all pages
-          total = api
-            .column(3)
-            .data()
-            .reduce(function (a, b) {
-              return intVal(a) + intVal(b);
-            }, 0);
-
-          // Total over this page
-          pageTotal = api
-            .column(3, { page: "current" })
-            .data()
-            .reduce(function (a, b) {
-              return intVal(a) + intVal(b);
-            }, 0);
-
-          // Update footer
-          $(api.column(3).footer()).html("Ksh." + pageTotal);
-        },
-      });
-
-      table2
-        .on("order.dt search.dt", function () {
-          let i = 1;
-
-          table2
-            .cells(null, 0, { search: "applied", order: "applied" })
-            .every(function (cell) {
-              this.data(i++);
-            });
-        })
-        .draw();
-
-        var table3 = $("#third").DataTable({
-        columnDefs: [
-          {
-            searchable: false,
-            orderable: false,
-            targets: 0,
-          },
-        ],
-        order: [[1, "asc"]],
-        footerCallback: function (row, data, start, end, display) {
-          var api = this.api();
-
-          // Remove the formatting to get integer data for summation
-          var intVal = function (i) {
-            return typeof i === "string"
-              ? i.replace(/[\$,]/g, "") * 1
-              : typeof i === "number"
-              ? i
-              : 0;
-          };
-
-          // Total over all pages
-          total = api
-            .column(3)
-            .data()
-            .reduce(function (a, b) {
-              return intVal(a) + intVal(b);
-            }, 0);
-
-          // Total over this page
-          pageTotal = api
-            .column(3, { page: "current" })
-            .data()
-            .reduce(function (a, b) {
-              return intVal(a) + intVal(b);
-            }, 0);
-
-          // Update footer
-          $(api.column(3).footer()).html("Ksh." + pageTotal);
-        },
-      });
-
-      table3
-        .on("order.dt search.dt", function () {
-          let i = 1;
-
-          table3
-            .cells(null, 0, { search: "applied", order: "applied" })
-            .every(function (cell) {
-              this.data(i++);
-            });
-        })
-        .draw();
+        // Update footer
+        $(api.column(3).footer()).html("Ksh." + pageTotal);
+      },
     });
-    $(document).ready(function () {
-      $("table.display").DataTable();
+
+    table1
+      .on("order.dt search.dt", function () {
+        let i = 1;
+
+        table1
+          .cells(null, 0, { search: "applied", order: "applied" })
+          .every(function (cell) {
+            this.data(i++);
+          });
+      })
+      .draw();
+
+    var table2 = $("#second").DataTable({
+      columnDefs: [
+        {
+          searchable: false,
+          orderable: false,
+          targets: 0,
+        },
+      ],
+      order: [[1, "asc"]],
+      footerCallback: function (row, data, start, end, display) {
+        var api = this.api();
+
+        // Remove the formatting to get integer data for summation
+        var intVal = function (i) {
+          return typeof i === "string"
+            ? i.replace(/[\$,]/g, "") * 1
+            : typeof i === "number"
+              ? i
+              : 0;
+        };
+
+        // Total over all pages
+        total = api
+          .column(3)
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Total over this page
+        pageTotal = api
+          .column(3, { page: "current" })
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Update footer
+        $(api.column(3).footer()).html("Ksh." + pageTotal);
+      },
     });
-  </script>
+
+    table2
+      .on("order.dt search.dt", function () {
+        let i = 1;
+
+        table2
+          .cells(null, 0, { search: "applied", order: "applied" })
+          .every(function (cell) {
+            this.data(i++);
+          });
+      })
+      .draw();
+
+    var table3 = $("#third").DataTable({
+      columnDefs: [
+        {
+          searchable: false,
+          orderable: false,
+          targets: 0,
+        },
+      ],
+      order: [[1, "asc"]],
+      footerCallback: function (row, data, start, end, display) {
+        var api = this.api();
+
+        // Remove the formatting to get integer data for summation
+        var intVal = function (i) {
+          return typeof i === "string"
+            ? i.replace(/[\$,]/g, "") * 1
+            : typeof i === "number"
+              ? i
+              : 0;
+        };
+
+        // Total over all pages
+        total = api
+          .column(3)
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Total over this page
+        pageTotal = api
+          .column(3, { page: "current" })
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Update footer
+        $(api.column(3).footer()).html("Ksh." + pageTotal);
+      },
+    });
+
+    table3
+      .on("order.dt search.dt", function () {
+        let i = 1;
+
+        table3
+          .cells(null, 0, { search: "applied", order: "applied" })
+          .every(function (cell) {
+            this.data(i++);
+          });
+      })
+      .draw();
+
+    var table4 = $("#fourth").DataTable({
+      columnDefs: [
+        {
+          searchable: false,
+          orderable: false,
+          targets: 0,
+        },
+      ],
+      order: [[1, "asc"]],
+      footerCallback: function (row, data, start, end, display) {
+        var api = this.api();
+
+        // Remove the formatting to get integer data for summation
+        var intVal = function (i) {
+          return typeof i === "string"
+            ? i.replace(/[\$,]/g, "") * 1
+            : typeof i === "number"
+              ? i
+              : 0;
+        };
+
+        // Total over all pages
+        total = api
+          .column(3)
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Total over this page
+        pageTotal = api
+          .column(3, { page: "current" })
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Update footer
+        $(api.column(3).footer()).html("Ksh." + pageTotal);
+      },
+    });
+
+    table4
+      .on("order.dt search.dt", function () {
+        let i = 1;
+
+        table4
+          .cells(null, 0, { search: "applied", order: "applied" })
+          .every(function (cell) {
+            this.data(i++);
+          });
+      })
+      .draw();
+
+      var table5 = $("#fifth").DataTable({
+      columnDefs: [
+        {
+          searchable: false,
+          orderable: false,
+          targets: 0,
+        },
+      ],
+      order: [[1, "asc"]],
+      footerCallback: function (row, data, start, end, display) {
+        var api = this.api();
+
+        // Remove the formatting to get integer data for summation
+        var intVal = function (i) {
+          return typeof i === "string"
+            ? i.replace(/[\$,]/g, "") * 1
+            : typeof i === "number"
+              ? i
+              : 0;
+        };
+
+        // Total over all pages
+        total = api
+          .column(3)
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Total over this page
+        pageTotal = api
+          .column(3, { page: "current" })
+          .data()
+          .reduce(function (a, b) {
+            return intVal(a) + intVal(b);
+          }, 0);
+
+        // Update footer
+        $(api.column(3).footer()).html("Ksh." + pageTotal);
+      },
+    });
+
+    table5
+      .on("order.dt search.dt", function () {
+        let i = 1;
+
+        table5
+          .cells(null, 0, { search: "applied", order: "applied" })
+          .every(function (cell) {
+            this.data(i++);
+          });
+      })
+      .draw();
+  });
+
+  $(document).ready(function () {
+    $("table.display").DataTable();
+  });
+</script>
+
 </html>
